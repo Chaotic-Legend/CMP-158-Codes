@@ -1,0 +1,71 @@
+Course: MAT, 771, 4, true
+Course: CMP, 777, 4, true
+Course: CMP, 711, 4, true
+Course: MAT, 723, 4, true
+Course: CMP, 168, 4, false
+Course: CMP, 338, 4, false
+
+Employee: Emma Blue, 1995, 7, Administration
+Employee: Frank Black, 1988, 9, Facilities
+
+GeneralStaff: Charlie Green, 1990, 5, Advising, Advise Students
+GeneralStaff: Dana White, 1985, 6, Sanitation, Cleaning
+GeneralStaff: Flash Gordon, 1934, 8, Security, Safety
+
+Faculty: Jane Smith, 1975, 10, Computer Science, No
+Faculty: John Doe, 1980, 11, Mathematics, Yes
+
+Student: Isaac Hoyos, 2003, Computer Science, Yes
+Student: Bob Brown, 2001, Mathematics, No
+Student: Jakub Nastała, 2002, Cultural Studies, Yes
+
+/*
+ * SchoolDB_Initial.txt File Format:
+ * 
+ * To ensure the program reads data correctly, enter each data type in the following format:
+ * 
+ * 1. Courses:
+ *    Format: Course: <Department>, <Course Number>, <Number of Credits>, <Graduate Status>
+ *    Example: Course: CMP, 168, 4, false
+ *    - <Department>: String (e.g., CMP)
+ *    - <Course Number>: Integer (e.g., 168)
+ *    - <Number of Credits>: Integer (e.g., 4)
+ *    - <Graduate Status>: Boolean (true for Graduate, false for Undergraduate)
+ * 
+ * 2. Faculty Members:
+ *    Format: Faculty: <Name>, <Birth Year>, <Employee Number>, <Department>, <Tenured Status>
+ *    Example: Faculty: Jane Smith, 1975, 12345, Computer Science, Yes
+ *    - <Name>: String (e.g., Jane Smith)
+ *    - <Birth Year>: Integer (e.g., 1975)
+ *    - <Employee Number>: Integer (e.g., 12345)
+ *    - <Department>: String (e.g., Computer Science)
+ *    - <Tenured Status>: Yes or No
+ * 
+ * 3. Students:
+ *    Format: Student: <Name>, <Birth Year>, <Major>, <Graduate Status>
+ *    Example: Student: John Doe, 2002, Mathematics, No
+ *    - <Name>: String (e.g., John Doe)
+ *    - <Birth Year>: Integer (e.g., 2002)
+ *    - <Major>: String (e.g., Mathematics)
+ *    - <Graduate Status>: Boolean (Yes for Graduate, No for Undergraduate)
+ * 
+ * 4. General Staff Members:
+ *    Format: GeneralStaff: <Name>, <Birth Year>, <Employee Number>, <Department>, <Duty>
+ *    Example: GeneralStaff: Lisa Brown, 1985, 54321, Admissions, Clerical
+ *    - <Name>: String (e.g., Lisa Brown)
+ *    - <Birth Year>: Integer (e.g., 1985)
+ *    - <Employee Number>: Integer (e.g., 54321)
+ *    - <Department>: String (e.g., Admissions)
+ *    - <Duty>: String (e.g., Clerical)
+ * 
+ * 5. Employees (General entries without specific faculty or staff attributes):
+ *    Format: Employee: <Name>, <Birth Year>, <Employee Number>, <Department>
+ *    Example: Employee: Mark Davis, 1979, 67890, Maintenance
+ *    - <Name>: String (e.g., Mark Davis)
+ *    - <Birth Year>: Integer (e.g., 1979)
+ *    - <Employee Number>: Integer (e.g., 67890)
+ *    - <Department>: String (e.g., Maintenance)
+ * 
+ * Note: Ensure each entry starts with the correct prefix (Course:, Faculty:, Student:, GeneralStaff:, Employee:)
+ * and that values are separated by commas. Each entry should be on its own line.
+ */
